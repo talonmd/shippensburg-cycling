@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- fixing device width problem -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1" />
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo|Permanent+Marker|Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+    <title>Shippensburg University Cycling</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-image">
+            <img class="headerlogo"
+                src="https://sites.google.com/site/shipcycling/_/rsrc/1291136663750/config/customLogo.gif?revision=2"
+                alt="">
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="training.html">Training Rides & Team Events</a></li>
+            <li><a href="team.html">About The Team</a></li>
+            <li><a href="faq.html">Tutorials & FAQ</a></li>
+            <li><a href="special-events.html">Special Events</a></li>
+
+            <li class="active"><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <div class="stay-open"></div>
+    </nav>
+
+    <main>
+
+        <h1>Contact Us</h1>
+
+        <div class="contact-div">
+            <figure class="contact-figure">
+                <img class="contact-image" src="images/profile.jpg" alt="">
+                <figcaption>
+                    <span>President</span>
+                    Kevin Griffin <br>
+                    kg7257@ship.edu
+                </figcaption>
+            </figure>
+
+            <figure class="contact-figure">
+                <img class="contact-image" src="images/profile.jpg" alt="">
+                <figcaption>
+                    <span>Faculty Advisor</span>
+                    Dr. Nathan Goates <br>
+                    nwgoates@ship.edu
+                </figcaption>
+            </figure>
+
+        </div>
+
+        <form action="" method="post" enctype="multipart/form-data" name="contact" class="contact-form">
+
+            <fieldset>
+                <legend>Send Us a Message</legend>
+                <label><span>Name:</span><input class="userinfo" type="text" name="name" placeholder="First Last"
+                        required></label>
+                <label><span>Email:</span><input class="userinfo" type="email" name="email"
+                        placeholder="example@gmail.com" required></label>
+
+                <label class="textarea-label">Type your message below:</label>
+                <textarea class="textarea" name="message" rows="10" cols="80" required></textarea>
+
+                <input class="submit-button" type="submit" name="submit" value="send">
+            </fieldset>
+
+
+
+        </form>
+
+
+        <div class="stay-open"></div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2019 &bull; Shippensburg University Cycling &bull; built by Talon Durrant</p>
+    </footer>
+
+</body>
+
+</html>

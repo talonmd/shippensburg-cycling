@@ -1,0 +1,765 @@
+/*
+font-families {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* CSS reset */
+
+p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/* box model fix */
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+html {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    height: 100%;
+}
+
+/* HEADER */
+
+header {
+    background-color: #000000;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* MAIN NAVIGATION */
+@media only screen and (min-width: 601px) {
+nav {
+    background-color: rgb(189, 39, 39);
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    float: left;
+}
+
+.nav-list li a {
+    display: block;
+    text-decoration: none;
+    color: #FAFAFA;
+    border-right: solid 1px #FAFAFA;
+    padding: .5rem 1.5rem;
+}
+
+.nav-list li.active a {
+    background-color: #FFFFFF;
+    color: rgb(189, 39, 39);
+}
+
+.nav-list li a:hover {
+    background-color: #FFFFFF;
+    color: rgb(189, 39, 39);
+}
+}
+
+/*NAVIGATION FOR THE PHONE*/
+
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #000000;
+        padding: .5rem 2%;
+    }
+    .nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-list li {
+        width: 90%;
+        text-align: center;
+        margin-left: 5%;
+    }
+    .nav-list li a {
+        padding: .5rem 1rem;
+        margin-bottom: .5rem;
+        background-color: rgb(189, 39, 39);
+        color: #F2F2F2;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        border-radius: .5rem;
+        border-right: none;
+    }
+    .nav-list li a:hover {
+        background-color: rgb(138, 31, 31);
+        color: #F2F2F2
+    }
+    .nav-list li.active a {
+        background-color: #F2F2F2;
+        color: black;
+    }
+    /* headers */
+    main h1 {
+        text-align: center;
+    }
+    /* images and media */
+    main figure {
+        float: none;
+        width: 96%;
+        margin-left: 2%;
+    }
+    main image {
+        float: none;
+    }
+
+.to-be-centered {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+    /* form */
+    .contact-form .textarea {
+        max-width: 80vw;
+    }
+    .contact-form .submit-button {
+        max-width: 90vw;
+        margin-left: 2%;
+    }
+}
+
+/* end phone navigation */
+
+/* MAIN */
+
+main {
+    padding: .5rem 2%;
+    background-color: #FFFFFF;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid black;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+main p {
+    padding-bottom: 2rem;
+    line-height: 150%;
+    color: #000000;
+}
+
+main blockquote {
+    font-style: italic;
+    margin: .2rem 2%;
+}
+
+main a {
+    color: rgb(189, 39, 39);
+}
+
+main a:hover {
+    color: rgb(138, 31, 31);
+}
+
+.bold-large {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.h3-center {
+    text-align: center;
+}
+
+ul.max88 {
+    max-width: 88%;
+}
+
+.info-toggle {
+    display: none;
+}
+
+/* OTHER MEDIA */
+
+.video {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+/* COLUMN PAGES FOR FAQS, TEAM, AND TEAM RIDES */
+
+/* right column */
+
+.column-container {
+    display: flex;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    border-left: 2px solid rgb(189, 39, 39);
+}
+
+h2.right-column-header {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+
+/* left column */
+
+.sponsors-only-visible-on-phone {
+    display: none;
+}
+
+.left-column li {
+    padding-bottom: 1rem;
+}
+
+.left-column ul {
+    list-style-type: square;
+    margin-left: 3rem;
+}
+
+.left-column .further, h3 {
+    padding: 1rem 0;
+}
+
+.left-column {
+    height: 100%;
+    width: 75%;
+    padding-right: 1rem;
+}
+
+/* RIGHT COLUMN NAVIGATION */
+
+.toggle-reverse {
+    display: none;
+}
+
+.about-team-nav, .about-team-nav-toggle {
+    float: left;
+    width: 100%;
+    background-color: rgb(189, 39, 39);
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.about-team-nav li, .about-team-nav-toggle li {
+    border-bottom: 1px solid #FFFFFF;
+    padding: .5rem;
+    width: 100%;
+}
+
+.about-team-nav a, .about-team-nav-toggle a {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.about-team-nav a:hover, .about-team-nav-toggle a:hover {
+    color: #FFFFFF;
+}
+
+.about-team-nav li:hover, .about-team-nav-toggle li:hover {
+    background-color: rgb(138, 31, 31);
+    color: #FFFFFF;
+}
+
+/* IMAGES */
+
+.index-figure-right {
+    float: right;
+    border: 2px solid #000000;
+    margin: .5rem 1rem .25rem 1rem;
+    display: block;
+}
+
+.index-image-right {
+    float: right;
+    width: 100%;
+    padding: 2px;
+    display: block;
+}
+
+.index-figure-left {
+    float: left;
+    border: 2px solid #000000;
+    margin: .5rem 1rem 0 .25rem;
+}
+
+.index-image-left {
+    float: left;
+    width: 100%;
+    padding: 2px;
+    max-height: 400px;
+}
+
+figcaption {
+    font-size: .75rem;
+    text-align: center;
+    padding-bottom: .25rem;
+}
+
+.figure-right {
+    float: right;
+    border: 2px solid #000000;
+    margin: .5rem 1rem 0 .25rem;
+    max-width: 30%;
+}
+
+.image-right {
+    width: 100%;
+    padding: 2px;
+}
+
+.image-right-stacked {
+    width: 100%;
+    padding: 0 2px;
+}
+
+.index-image-bottom {
+    width: 100%;
+    padding: 2px;
+}
+
+.team-pic-figure {
+    max-width: 75%;
+    border: 2px solid #000000;
+    margin-left: 0;
+}
+
+.team-pic-img {
+    width: 100%;
+    padding: 2px;
+}
+
+.index-figure-bottom {
+    width: 50%;
+    border: 2px solid #000000;
+    margin-left: 0;
+}
+
+.map-figure, .map-figure-toggle {
+    border: 2px solid #000000;
+    margin: .5rem auto 0 auto;
+    max-width: 40%;
+}
+
+.map-image, .map-image-toggle {
+    padding: 2px;
+    width: 100%;
+}
+
+.width100 {
+    width: 100%;
+    padding: 2rem;
+}
+
+.center {
+    padding-left: 32%;
+    padding-bottom: 1rem;
+}
+
+/* WINNERS CONTAINERS */
+
+.feb-winners-container {
+    margin: 1rem 0 1rem 0;
+    width: 90%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.winners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fall-event-details-list li {
+    max-width: 65%;
+    padding-right: 1rem;
+}
+
+/* TABLE */
+
+table.info a, table.info-toggle a {
+    color: rgb(189, 39, 39);
+    width: 100%;
+    border-radius: 10px;
+}
+
+table.info a:hover, table.info-toggle a:hover {
+    color: rgb(138, 31, 31);
+    padding: .25rem;
+}
+
+table.info, table.info-toggle {
+    border-collapse: collapse;
+    font-size: .8rem;
+    border: 1px solid #000;
+    margin: 0 2% 1rem 0;
+    width: 100%;
+}
+
+table.info th, table.info-toggle th {
+    text-align: left;
+    background-color: #000000;
+    color: #F2F2F2;
+    font-size: 1rem;
+    padding: .5rem .5rem;
+}
+
+table.info td, table.info-toggle td {
+    padding: .5rem;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+/* CONTACT PAGE -- CONTACT GALLERY */
+
+.contact-div {
+    display: flex;
+    width: 100%;
+}
+
+.contact-figure {
+    border: solid 2px #000000;
+    padding: 2px;
+    width: 158px;
+    text-align: center;
+    margin: .75rem;
+}
+
+.contact-image {
+    width: 100%;
+    padding: 2px;
+}
+
+.contact-figure figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.contact-figure figcaption span {
+    display: block;
+    font-weight: bold;
+    color: rgb(189, 39, 39);
+    font-size: 1.1rem;
+}
+
+/* FORM STYLING */
+
+.contact-form fieldset {
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    color: #000000;
+    padding-bottom: 1.5rem;
+}
+
+.contact-form legend {
+    font-weight: 700;
+}
+
+.contact-form span {
+    display: block;
+    padding: .8rem 0 .1rem .2rem;
+    color: rgb(189, 39, 39)
+}
+
+.contact-form .userinfo {
+    color: #000000;
+    width: 25rem;
+    border-radius: 4px;
+    border: solid 1px #000000;
+    padding: .4rem .4rem .4rem .2rem;
+    background-color: rgba(156, 62, 62, 0.05);
+}
+
+.contact-form .textarea-label {
+    display: block;
+    color: rgb(189, 39, 39);
+    padding-bottom: .2rem;
+    padding-top: .4rem;
+}
+
+.contact-form .textarea {
+    border-radius: 4px;
+    border: solid 1px #6b1e1e75;
+    background-color: rgba(156, 62, 62, 0.05);
+    padding-left: .2rem;
+}
+
+.contact-form .submit-button {
+    width: 15rem;
+    padding: .3rem;
+    background: rgb(189, 39, 39);
+    border: solid 1px #000000;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+/* SPECIAL EVENTS PAGE */
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 2rem;
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+.event-tile {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    border: 3px solid #141414;
+    border-radius: 2px;
+}
+
+.event-tile:hover {
+    border: 3px solid rgb(189, 39, 39);
+}
+
+.event-title {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    border-radius: 2px;
+    height: 2.5rem;
+    padding: .5rem;
+    font-size: .9rem;
+}
+
+.event-title:hover {
+    background-color: rgb(189, 39, 39);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* fix on sponsors div needed due to media query */
+
+.sponsors-only-visible-on-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.sponsors-only-visible-on-desktop img {
+    padding-bottom: 4rem;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.sponsors-only-visible-on-desktop .teamimg {
+    width: 75%;
+    border: 2px solid #000000;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+    margin-left: 12.5%;
+}
+
+.sponsors-only-visible-on-desktop .right-column-h2 {
+    border-bottom: 1px solid #000000;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 2rem;
+}
+
+/* media query for adjusting for phone screens */
+
+@media only screen and (max-width: 600px) {
+
+    /* left and right columns on training, about team, and faqs */
+
+    .column-container {
+        flex-direction: column-reverse;
+    }
+
+    .left-column {
+        width: 100%;
+    }
+
+    .center {
+        width: 96%;
+        padding: 0;
+        margin-left: 2%;
+
+    }
+
+    .right-column {
+        width: 100%;
+        border-left: none;
+    }
+        
+    .sponsors-only-visible-on-desktop {
+        display: none;
+    }
+
+    .sponsors-only-visible-on-phone {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 3px solid #000;
+        margin-top: 1rem;
+    }
+  
+    .sponsors-only-visible-on-phone .right-column-h2 {
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+        font-family: 'Permanent Marker', cursive;
+        margin-bottom: 1rem;
+    }
+
+    .sponsors-only-visible-on-phone img {
+        padding-bottom: 1rem;
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .figure-right {
+        float: none;
+        margin-bottom: 1rem;
+    }
+
+    .image-right-stacked {
+        float: none;
+        width: 100%;
+    }
+
+    /* right column navigation changes */
+
+  
+
+    .map-figure-toggle, .map-image-toggle, .right-column-header-toggle {
+        display: none;
+    }
+
+    .about-team-nav-toggle {
+        display: none;
+    }
+
+    .right-column-header {
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-team-nav {
+        background-color: #F2F2F2;
+        margin: 0 0 .2rem 0;
+        padding: 0;
+    }
+
+    .about-team-nav li {
+        background-color: rgb(138, 31, 31);
+        text-align: center;
+        border-radius: 10px;
+        padding: .5rem .2rem;
+        margin: .25rem 0;
+    }
+
+    .about-team-nav li:hover {
+        background-color: rgb(189, 39, 39);
+    }
+
+    .info-toggle {
+        display: block;
+    }
+
+    table.info, .info-toggle {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .toggle-reverse {
+        display: block;
+        float: left;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .toggle-reverse li:hover {
+        background-color: rgb(189, 39, 39);
+    }
+
+}/* close phone screen adjustment */
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(189, 39, 39);
+    color: #FAFAFA;
+}
+
+footer p {
+    text-align: center;
+    padding: .5rem;
+}
+
+/* OTHER */
+
+.stay-open {
+    clear: both;
+}
